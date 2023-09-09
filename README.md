@@ -40,14 +40,25 @@ The **Goals-API** is a robust RESTful API project designed to help users manage 
 
    ```shell
    git clone https://github.com/your-username/Goals-API.git
+   cd Goals-API
+   npm install
+   ```
 
 
+Set up your MongoDB database and update the database configuration in config.js.
 
+Create a .env file in the root directory and define your environment variables, including the secret for JWT authentication:
 
-
-
-
-
+   ```shell
+   
+   PORT=3000
+   MONGODB_URI=mongodb://localhost:27017/your-database
+   JWT_SECRET=your-secret-key 
+   ```
+## Start
+ ```shell
+npm start
+```
 
 Usage
 To interact with the Goals-API, you can use tools like Postman for testing the API endpoints.
@@ -55,38 +66,39 @@ To interact with the Goals-API, you can use tools like Postman for testing the A
 Ensure that you are authenticated using JWT before making requests to protected endpoints. You can obtain a JWT token by registering and logging in.
 
 ## API Endpoints
-Goals
--GET /api/goals: Get all user-specific goals.
--GET /api/goals/:id: Get a specific goal by ID.
--POST /api/goals: Create a new goal.
--PUT /api/goals/:id: Update an existing goal.
--DELETE /api/goals/:id: Delete a goal.
--Authentication
--POST /api/register: Register a new user.
--POST /api/login: Log in and obtain a JWT token.
--Postman Collection
-For detailed API documentation and testing, you can import the provided Postman collection:
 
+### Goals
 
+- **GET /api/goals**: Get all user-specific goals.
+- **GET /api/goals/:id**: Get a specific goal by ID.
+- **POST /api/goals**: Create a new goal.
+- **PUT /api/goals/:id**: Update an existing goal.
+- **DELETE /api/goals/:id**: Delete a goal.
 
+### Authentication
 
+- **POST /api/register**: Register a new user.
+- **POST /api/login**: Log in and obtain a JWT token.
 
+### Postman Collection
 
+For detailed API documentation and testing, you can import the provided Postman collection.
 
+## Authentication
 
-
-Authentication
 Authentication in this project is based on JSON Web Tokens (JWT). To access protected endpoints, you need to obtain a JWT token by registering and logging in. Include the token in the request headers for authorization.
 
-Database
-This project uses MongoDB as its database system. Make sure you have MongoDB installed and configured. Update the database connection URI in config.js.
+## Database
 
-Contributing
+This project uses MongoDB as its database system. Make sure you have MongoDB installed and configured. Update the database connection URI in `config.js`.
+
+## Contributing
+
 Contributions are welcome! If you have any suggestions, enhancements, or bug fixes, please submit a pull request.
 
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
+## License
 
-'''
-Feel free to customize the content and formatting as needed for your project's README.md file.
-'''
+This project is licensed under the MIT License. See the `LICENSE` file for details.
+
+
+
