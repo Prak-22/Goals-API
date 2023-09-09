@@ -1,6 +1,5 @@
 # Goals-API
 
-![Project Image](https://your-image-url.com)
 
 > A RESTful API project for managing user-specific goals using JavaScript, Node.js, Express.js, MongoDB, Postman, and JWT Authentication.
 
@@ -55,17 +54,17 @@ To interact with the Goals-API, you can use tools like Postman for testing the A
 
 Ensure that you are authenticated using JWT before making requests to protected endpoints. You can obtain a JWT token by registering and logging in.
 
-API Endpoints
+## API Endpoints
 Goals
-GET /api/goals: Get all user-specific goals.
-GET /api/goals/:id: Get a specific goal by ID.
-POST /api/goals: Create a new goal.
-PUT /api/goals/:id: Update an existing goal.
-DELETE /api/goals/:id: Delete a goal.
-Authentication
-POST /api/register: Register a new user.
-POST /api/login: Log in and obtain a JWT token.
-Postman Collection
+-GET /api/goals: Get all user-specific goals.
+-GET /api/goals/:id: Get a specific goal by ID.
+-POST /api/goals: Create a new goal.
+-PUT /api/goals/:id: Update an existing goal.
+-DELETE /api/goals/:id: Delete a goal.
+-Authentication
+-POST /api/register: Register a new user.
+-POST /api/login: Log in and obtain a JWT token.
+-Postman Collection
 For detailed API documentation and testing, you can import the provided Postman collection:
 
 
@@ -88,6 +87,6 @@ Contributions are welcome! If you have any suggestions, enhancements, or bug fix
 License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-
+'''
 Feel free to customize the content and formatting as needed for your project's README.md file.
-
+'''
